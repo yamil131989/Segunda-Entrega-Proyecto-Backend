@@ -1,0 +1,26 @@
+[
+	{
+		"title": "Nuevo producto 1",
+		"description": "uuid nuevo",
+		"code": "qwerty123",
+		"price": 77000,
+		"status": false,
+		"stock": 100,
+		"thumbnails": [
+			"./src/public/img/prod1/Image1.png"
+		],
+		"id": "4ff08d3f-3c52-4f29-bcf8-0e7674d1c307"
+	},
+	{
+		"title": "Nuevo producto 2 modificado",
+		"description": "uuid nuevo",
+		"code": "qwerty123",
+		"price": 77000,
+		"status": false,
+		"stock": 900,
+		"thumbnails": [
+			"./src/public/img/prod1/Image1.png"
+		],
+		"id": "44a270b6-d642-40c9-b52e-03dc4cfcfafc"
+	}
+]
