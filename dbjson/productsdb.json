@@ -1,26 +1,132 @@
 [
 	{
-		"title": "Nuevo producto 1",
-		"description": "uuid nuevo",
-		"code": "qwerty123",
+		"title": "Camiseta 1",
+		"description": "Camiseta Adidas Boca Away",
+		"code": "abc12",
 		"price": 77000,
 		"status": false,
 		"stock": 100,
 		"thumbnails": [
-			"./src/public/img/prod1/Image1.png"
+			"./src/public/img/productos/boca_camiseta  2023.jpg"
 		],
 		"id": "4ff08d3f-3c52-4f29-bcf8-0e7674d1c307"
 	},
 	{
-		"title": "Nuevo producto 2 modificado",
-		"description": "uuid nuevo",
-		"code": "qwerty123",
+		"title": "Camiseta 2",
+		"description": "Camiseta Adidas Boca ",
+		"code": "abc123",
 		"price": 77000,
 		"status": false,
 		"stock": 900,
 		"thumbnails": [
-			"./src/public/img/prod1/Image1.png"
+			"./src/public/img/productos/Image1.png"
 		],
 		"id": "44a270b6-d642-40c9-b52e-03dc4cfcfafc"
+	},
+	{
+		"title": "Camiseta 3",
+		"description": "Camiseta Adidas Juventus Away",
+		"code": "remeraplayera001",
+		"price": 45000,
+		"status": true,
+		"stock": 100,
+		"thumbnails": [
+			"./src/public/img/productos/Image1.png"
+		],
+		"id": "e8fb40fd-5158-4960-ac48-68a368682609"
+	},
+	{
+		"title": "Camiseta 4",
+		"description": "Camiseta Adidas RealMadrid Away",
+		"code": "rm123",
+		"price": 25000,
+		"status": true,
+		"stock": 50,
+		"thumbnails": [
+			"./src/public/img/productos/Image1.png"
+		],
+		"id": "1a7fd272-0371-40c4-a7ce-a4d42f408a5f"
+	},
+	{
+		"title": "Camiseta 5",
+		"description": "Camiseta Adidas Barcelona Away",
+		"code": "yean1231black",
+		"price": 25000,
+		"status": true,
+		"stock": 50,
+		"thumbnails": [
+			"./src/public/img/productos/Image1.png"
+		],
+		"id": "720c5ba9-b4cd-4065-9984-5ba9c98365c3"
+	},
+	{
+		"title": "Camiseta 6",
+		"description": "Camiseta Adidas Palermo Away",
+		"code": "asb123",
+		"price": "10000",
+		"status": "true",
+		"stock": "100",
+		"thumbnails": "./src/public/img/productos/Image1.png",
+		"id": "05d6cf63-e5ae-4708-bc8e-1a76eb60397b"
+	},
+	{
+		"title": "Camiseta 7",
+		"description": "Camiseta Adidas Huracan Away",
+		"code": "abc123",
+		"price": "120000",
+		"status": "true",
+		"stock": "1000",
+		"thumbnails": "./src/public/img/productos/Image1.png",
+		"id": "63af1914-8cf0-49e3-baf0-ded71ffb428f"
+	},
+	{
+		"title": "Camiseta 8",
+		"description": "Camiseta Adidas Cruzeiro Away",
+		"code": "abc123",
+		"price": "10000",
+		"status": "true",
+		"stock": "1001",
+		"thumbnails": "./src/public/img/productos/Image1.png",
+		"id": "f5d4b01d-b91c-4f40-8118-81874c38cf36"
+	},
+	{
+		"title": "Camiseta 9",
+		"description": "Camiseta Adidas Argentina Away",
+		"code": "abc123",
+		"price": "120000",
+		"status": "true",
+		"stock": "100",
+		"thumbnails": "./src/public/img/productos/Image1.png",
+		"id": "aeba3ef6-a50b-46f2-879e-c46a5ce7cbc5"
+	},
+	{
+		"title": "Camiseta 10",
+		"description": "Camiseta Adidas Ajax Away",
+		"code": "abc123",
+		"price": "122",
+		"status": "true",
+		"stock": "1001",
+		"thumbnails": "./src/public/img/productos/Image1.png",
+		"id": "f9d3d6ff-3e88-424b-90ee-a943f21f1881"
+	},
+	{
+		"title": "Camiseta 11",
+		"description": "Camiseta Bayer Munich",
+		"code": "BM2024",
+		"price": "110000",
+		"status": "true",
+		"stock": "50",
+		"thumbnails": "./src/public/img/productos/Image1.png",
+		"id": "a561d2d4-8ddc-427a-a589-db548cb0ee05"
+	},
+	{
+		"title": "Camiseta 12",
+		"description": "Prueba123",
+		"code": "Test123",
+		"price": "99000",
+		"status": "false",
+		"stock": "1",
+		"thumbnails": "./src/public/img/prod1/Image1.png",
+		"id": "482cce4b-bbbd-416b-bb99-df41ea3c654d"
 	}
 ]
