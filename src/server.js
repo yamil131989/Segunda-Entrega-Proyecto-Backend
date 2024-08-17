@@ -59,7 +59,7 @@ const httpServer = app.listen(PORT,()=>{
 const socketServer = new Server(httpServer)
 
 socketServer.on('connection', socket =>{  
-    
+    console.log("Cliente conectado")
     const productos = prodManagerFs.getProductsWebsocket()
     socket.emit('productos',productos)
 
