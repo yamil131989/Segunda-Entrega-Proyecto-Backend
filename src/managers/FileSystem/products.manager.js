@@ -1,4 +1,3 @@
-
 const { randomUUID } = require('crypto')
 const fs = require('fs')
 const { stringify } = require('querystring')
@@ -37,9 +36,29 @@ class ProductsManagerFs {
         }
                     
     }
-        
+    getProductsWebsocket(){
+        try {          
+            if(fs.existsSync(path)){
+                const productsJson =  fs.readFileSync(path,'utf-8')
+                const productsJs = JSON.parse(productsJson)                
+                return productsJs
+            } else {                
+                return []
+            }
+        } catch (error) {
+            console.log(error)
+        }
+                    
+    }  
    
-
+    createProductwebsocket = (nuevoprod) =>{
+        const productos = this.getProductsWebsocket()
+        let uuid = randomUUID()
+        nuevoprod.id = uuid
+        const prodAgregados = [...productos,nuevoprod]
+        fs.writeFileSync(path,JSON.stringify(prodAgregados,null,'\t'))
+        return prodAgregados
+    }
     createProduct = async (newProduct) =>{             
         // if(
         //     !newProduct.title ||
@@ -62,7 +81,7 @@ class ProductsManagerFs {
             console.log(prodagregados)    
             await fs.promises.writeFile(path,JSON.stringify(prodagregados,null,'\t')) //sobreescibimos en la ruta
             return newProduct 
-
+            
            
 
         } catch (error) {
@@ -131,6 +150,7 @@ class ProductsManagerFs {
             console.log(error)
         }
     } 
+
 
 }
 
