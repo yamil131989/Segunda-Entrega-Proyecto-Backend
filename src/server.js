@@ -5,9 +5,12 @@ const cartRouter = require('./routes/carts.router.js')
 const productRouter = require('./routes/products.router.js')
 const views = require('./routes/views.router.js')
 
+
+
 //const viewsRouter = require('./routes/views.router.js')
 const ProductsManagerFs = require('./managers/FileSystem/products.manager.js')
 const prodManagerFs = new ProductsManagerFs()
+
 
 //SOCKET ******************************
 const {Server} = require('socket.io')
@@ -44,15 +47,26 @@ app.use((error, req, res, next) => {
 
 
 
-const expressServer = app.listen(PORT,()=>{
+const httpServer = app.listen(PORT,()=>{
     console.log(`Listening :,${PORT}`)
 })
 
-const socketServer = new Server(expressServer)
 
-socketServer.on('connection', socket=>{
-    console.log("Cliente Conectado")
-    const productos =  prodManagerFs.getProducts()
+// const expressServer = app.listen(PORT,()=>{
+//     console.log(`Listening :,${PORT}`)
+// })
+
+const socketServer = new Server(httpServer)
+
+socketServer.on('connection', socket =>{  
+    
+    const productos = prodManagerFs.getProductsWebsocket()
     socket.emit('productos',productos)
-})
 
+    socket.on('addProducto',newproduct=>{
+        //producto agregado
+        const result = prodManagerFs.createProductwebsocket(newproduct)
+        socket.emit('productos',result)
+        //console.log({result})
+    })
+})
